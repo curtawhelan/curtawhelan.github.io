@@ -12,23 +12,15 @@ import React, { useEffect, useRef } from "react";
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto: hello@example.com",
+    url: "mailto: curtawhelan@outlook.com",
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/curtawhelan",
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com",
-  },
-  {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
+    url: "https://www.linkedin.com/in/curt-a-whelan/",
   },
 ];
 
@@ -105,6 +97,9 @@ const Header = () => {
           </HStack>
           <nav>
             <HStack spacing={8}>
+              <a href="/#landing" onClick={handleClick("landing")}>
+                Home
+              </a>
               <a href="/#projects" onClick={handleClick("projects")}>
                 Projects
               </a>
